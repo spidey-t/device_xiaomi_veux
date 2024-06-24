@@ -19,8 +19,12 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        if (DEBUG)
-            Log.d(TAG, "Received boot completed intent");
-        RefreshUtils.startService(context);        
+        Log.d(TAG, "Received intent: " + intent.getAction());
+        if (!intent.getAction().equals(Intent.ACTION_LOCKED_BOOT_COMPLETED)) {
+            return;
+        }
+
+        Log.i(TAG, "Boot completed, starting services");
+        RefreshUtils.startService(context);
     }
 }
