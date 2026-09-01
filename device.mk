@@ -93,8 +93,8 @@ PRODUCT_PACKAGES += \
     DeviceAsWebcam
 
 # Device-specific settings
-PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer
+# PRODUCT_PACKAGES += \
+#     DSPVolumeSynchronizer
 
 # Display
 PRODUCT_PACKAGES += \
@@ -432,6 +432,10 @@ PRODUCT_COPY_FILES += \
 # WiFi firmware symlink
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+TARGET_ENABLE_BLUR := true
+MISTOS_MAINTAINER := Spidey
+WITH_GMS := true
 
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)

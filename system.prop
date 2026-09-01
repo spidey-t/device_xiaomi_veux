@@ -3,3 +3,12 @@ audio.service.client_wait_ms=10000
 
 # CameraX extensions
 ro.camerax.extensions.enabled=true
+
+ro.mist.display=1080 x 2400, 120 Hz
+ro.mist.battery=5000mAh
+ro.mist.soc=Snapdragon® 695 5G
+ro.mist.camera=108MP + 8MP + 2MP
+ro.mist.front=16MP
+ro.mist.platform=SM6375
+ro.mist.screen=6.67' AMOLED
+ro.mist.device.name=Poco X4 Pro 5G
