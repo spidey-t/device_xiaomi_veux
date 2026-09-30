@@ -26,6 +26,11 @@ PRODUCT_NAME := lineage_veux
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Target kernel is 5.4, which lacks MREMAP_DONTUNMAP (landed in 5.10), so ART
+# cannot use userfaultfd GC. Set explicitly since the build host kernel version
+# may be unrecognizable to build/soong/dexpreopt/construct_uffd_gc_flag.
+PRODUCT_ENABLE_UFFD_GC := false
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="veux_eea-user 13 TKQ1.221114.001 V816.0.13.0.TKCEUXM release-keys" \
     BuildFingerprint=Redmi/veux_eea/veux:13/TKQ1.221114.001/V816.0.13.0.TKCEUXM:user/release-keys \
