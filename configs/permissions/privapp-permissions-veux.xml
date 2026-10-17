@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<permissions>
+    <!-- com.google.android.as (DevicePersonalizationAiAiPrebuiltPixel2026) is a
+         privileged prebuilt from vendor/gms. The prebuilt requests these
+         signature|privileged platform permissions, but the GMS allowlist
+         (privapp-permissions-google-p.xml) does not grant them, which makes
+         system_server abort on boot (ro.control_privapp_permissions=enforce).
+         Allowlist them here; entries for the same package merge across files. -->
+    <privapp-permissions package="com.google.android.as">
+        <permission name="android.permission.PERSONAL_CONTEXT_RECEIVE_INSIGHTS"/>
+        <permission name="android.permission.PERSONAL_CONTEXT_HOST_INSIGHT_SURFACE"/>
+    </privapp-permissions>
+</permissions>

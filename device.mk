@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# Device personalization (com.google.android.as) privileged permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-veux.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-veux.xml
+
 # IFAA manager
 PRODUCT_PACKAGES += \
     IFAAService

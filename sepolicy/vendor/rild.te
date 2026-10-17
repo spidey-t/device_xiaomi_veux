@@ -1,0 +1,4 @@
+vendor_restricted_prop(vendor_oem_imei_prop)
+
+# RIL exports the OEM IMEI for vendor consumers
+set_prop(rild, vendor_oem_imei_prop)

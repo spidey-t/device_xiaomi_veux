@@ -1,2 +1,5 @@
 # WiFi Display
 persist.vendor.setWFDInfo. u:object_r:vendor_wfd_sys_debug_prop:s0
+
+# Fingerprint (legacy stock HAL writes a sys.* prop)
+sys.fp.vendor              u:object_r:system_fp_prop:s0

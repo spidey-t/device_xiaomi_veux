@@ -1,10 +1,14 @@
 # Camera
 vendor.camera.sensor.               u:object_r:vendor_camera_sensor_prop:s0
+vendor.camera.config.level          u:object_r:vendor_camera_config_prop:s0
 
 # Fingerprint
 persist.vendor.sys.fp.              u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.info          u:object_r:vendor_fp_info_prop:s0
 persist.vendor.sys.fp.uid           u:object_r:vendor_fp_info_prop:s0
+
+# RIL
+ro.vendor.oem.imei                  u:object_r:vendor_oem_imei_prop:s0
 
 # Mlipay
 persist.vendor.sys.pay.             u:object_r:vendor_mlipay_prop:s0
