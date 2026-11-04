@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The Lunaris AOSP Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About device screen -->
+    <string name="lunaris_device_message">POCO X4 Pro 5G</string>
+    <string name="lunaris_processor_code_message">Snapdragon® 695</string>
+    <string name="lunaris_battery_type_message">5000 mAh</string>
+    <string name="lunaris_screen_message">AMOLED 1080 x 2400, 120Hz</string>
+</resources>

@@ -34,4 +34,6 @@
     <!-- Show battery cycle count -->
     <bool name="config_show_battery_cycle_count" translatable="false">true</bool>
 
+    <bool name="config_use_power_profile_for_battery_capacity">true</bool>
+
 </resources>
