@@ -11,6 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# veux uses the cheaper Kawase Darkmoon blur path; the default Kawase dual-filter
+# V2 blur is too heavy for the Adreno 619 at 120 Hz and shows up as GPU frame
+# misses in homescreen/depth animations.
+TARGET_LOW_END_BLUR := true
+
 # Inherit some common Lunaris stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
