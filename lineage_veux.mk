@@ -19,6 +19,9 @@ TARGET_LOW_END_BLUR := true
 # Inherit some common Lunaris stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# ViPER4Android
+$(call inherit-product, vendor/viper/viper.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
