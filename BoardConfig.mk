@@ -46,7 +46,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 440
 
 # Dolby
-include vendor/oneplus/dolby/BoardConfigDolby.mk
+include vendor/lunaris/dolby/BoardConfigDolby.mk
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
