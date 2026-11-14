@@ -120,6 +120,18 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('ro.ril.oem', ''),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
+        .binary_regex_replace(
+            b'persist.vendor.camera.clientname',
+            b'persist.vendor.camera.pkgname\x00\x00\x00'),
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
+        .binary_regex_replace(
+            b'persist.vendor.camera.clientname',
+            b'persist.vendor.camera.pkgname\x00\x00\x00'),
+    'vendor/lib64/com.qti.feature2.rt.so': blob_fixup()
+        .binary_regex_replace(
+            b'persist.vendor.camera.clientname',
+            b'persist.vendor.camera.pkgname\x00\x00\x00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
