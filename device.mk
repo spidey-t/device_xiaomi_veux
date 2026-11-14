@@ -80,6 +80,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64
 
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
+# Pass every camera client's package name to the Xiaomi HAL as a session parameter.
+$(call soong_config_set,camera,package_name,com.xiaomi.sessionparams.clientName)
 
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
