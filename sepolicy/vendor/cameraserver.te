@@ -1,0 +1,2 @@
+# Third-party JFIF test switch (persist.vendor.cam.3pjfif)
+get_prop(cameraserver, vendor_camera_prop)
