@@ -16,7 +16,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # misses in homescreen/depth animations.
 TARGET_LOW_END_BLUR := true
 
-# Inherit some common Lunaris stuff.
+# AxionOS device configuration.
+TARGET_DISABLE_EPPE := true
+AXION_CAMERA_REAR_INFO := 50
+AXION_CAMERA_FRONT_INFO := 16
+AXION_MAINTAINER := Spidey
+AXION_PROCESSOR := Snapdragon_CPU_1
+
+# Inherit some common Axion stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # ViPER4Android
@@ -26,20 +33,12 @@ $(call inherit-product, vendor/viper/viper.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Lunaris specific properties
-LUNARIS_MAINTAINER := Spidey
-LUNARIS_BUILD_TYPE := COMMUNITY
-WITH_BCR := true
-WITH_GMS := true
-TARGET_DISABLE_EPPE := true
+# Axion specific properties
 TARGET_OPTIMIZED_DEXOPT := true
 TARGET_CUSTOM_UDFPS := false
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
 TARGET_SUPPORTS_BLUR := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-WITH_PIXEL_LAUNCHER := false
-TARGET_SUPPORTS_QUICK_TAP := false
 
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := veux

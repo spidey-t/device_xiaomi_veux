@@ -5,5 +5,5 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 
-# Lunaris
-ro.lunaris.maintainer=Spidey
+# Axion
+ro.axion.maintainer=Spidey
